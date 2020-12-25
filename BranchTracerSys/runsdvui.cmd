@@ -1,0 +1,2 @@
+cd /d "E:\Projects\windows-debugger-research\BranchTracer\BranchTracerSys" &msbuild "BranchTracerSys.vcxproj" /t:sdvViewer /p:configuration="Debug" /p:platform="x64" /p:SolutionDir="E:\Projects\windows-debugger-research" 
+exit %errorlevel% 

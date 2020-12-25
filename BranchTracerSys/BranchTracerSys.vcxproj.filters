@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Source Files\asm">
+      <UniqueIdentifier>{aead6267-5d84-45db-93fb-fffdf2f6343a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bts">
+      <UniqueIdentifier>{6c897276-9fe2-4ee8-b5d8-aef592f9ec56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel-hooks">
+      <UniqueIdentifier>{1e45e513-6ea4-404a-8351-80b8d58a97a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel-tools">
+      <UniqueIdentifier>{4d201744-e4c5-44ef-b184-a359e3015b45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BranchTracerSys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel-hooks\Hooks.cpp">
+      <Filter>Source Files\kernel-hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel-hooks\LDasm.c">
+      <Filter>Source Files\kernel-hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel-tools\apc_ex.c">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel-tools\KernelBase.c">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClCompile>
+    <ClCompile Include="bts\bts.cpp">
+      <Filter>Source Files\bts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\cpu.inc">
+      <Filter>Source Files\asm</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asm\debug.h">
+      <Filter>Source Files\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="bts\bts.h">
+      <Filter>Source Files\bts</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-hooks\Hooks.h">
+      <Filter>Source Files\kernel-hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-hooks\LDasm.h">
+      <Filter>Source Files\kernel-hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\apc_ex.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\KernelBase.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\my_ntstatus.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\nt_enums.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\nt_imports.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\nt_include.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel-tools\nt_structs.h">
+      <Filter>Source Files\kernel-tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ioctls.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="asm\debug32.asm">
+      <Filter>Source Files\asm</Filter>
+    </MASM>
+    <MASM Include="asm\debug64.asm">
+      <Filter>Source Files\asm</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
