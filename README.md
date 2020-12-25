@@ -1,9 +1,9 @@
 ### BrachTrace 
 
-BrachTraceExe              示例程序
-BranchTrace-x64plugin-wtl  x64dbg插件
-BranchTrace-x64plugin      x64dbg插件(已弃用)
-BranchTracerSys            核心驱动程序
+BrachTraceExe              示例程序  
+BranchTrace-x64plugin-wtl  x64dbg插件  
+BranchTrace-x64plugin      x64dbg插件(已弃用)  
+BranchTracerSys            核心驱动程序  
 
 #### 思路
 1. 利用BTS将CPU的执行过程记录到内存中。
