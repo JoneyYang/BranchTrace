@@ -1,0 +1,133 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_THREAD          PNG                     "res\\Thread.png"
+
+IDB_PNG_TRACE           PNG                     "res\\trace.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_THREAD_TRACE DIALOGEX 0, 0, 319, 232
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Thread Trace"
+FONT 8, "Consolas", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_THREAD,72,14,180,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start Trace",IDC_BUTTON_STARTTRACE,257,14,55,14
+    PUSHBUTTON      "Reset",IDC_BUTTON_RESET,257,32,55,14,WS_DISABLED
+    LTEXT           "Choose Thread",IDC_STATIC,14,17,53,8
+    PUSHBUTTON      "Prev",IDC_BUTTON_PREV,257,169,55,14,WS_DISABLED
+    PUSHBUTTON      "Next(Into)",IDC_BUTTON_NEXTINTO,257,67,55,14,WS_DISABLED
+    PUSHBUTTON      "Prev(Into)",IDC_BUTTON_PREVINTO,257,51,55,14,WS_DISABLED
+    PUSHBUTTON      "&Next",IDC_BUTTON_NEXT,257,185,55,14,WS_DISABLED
+    LTEXT           "Choose Module",IDC_STATIC,14,34,53,8
+    COMBOBOX        IDC_COMBO_MODULE,72,32,180,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,51,238,174
+    PUSHBUTTON      "ProcStart",IDC_BUTTON_PROCSTART,257,91,55,14,WS_DISABLED
+    PUSHBUTTON      "ProcEnd",IDC_BUTTON_PROCEND,257,107,55,14,WS_DISABLED
+    PUSHBUTTON      "ToEnd",IDC_BUTTON_TOEND,257,211,55,14,WS_DISABLED
+    PUSHBUTTON      "Prev Snippet",IDC_BUTTON_PREVSNIPPET,257,130,55,14,WS_DISABLED
+    PUSHBUTTON      "Next Snippet",IDC_BUTTON_NEXTSNIPPET,257,146,55,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_THREAD_TRACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+        HORZGUIDE, 22
+        HORZGUIDE, 38
+        HORZGUIDE, 51
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_THREAD_TRACE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
